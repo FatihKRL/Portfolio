@@ -1,5 +1,3 @@
-    <a href="javascript:void(0);" onclick="document.getElementById('apropos').scrollIntoView({behavior: 'smooth'});">À propos</a>
-
     const openMenu = () => {
         const menu = document.querySelector(".header-menu");
         menu.classList.toggle("active");
