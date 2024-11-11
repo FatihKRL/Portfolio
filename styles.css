@@ -24,24 +24,23 @@ body{
 }
 .typewriter h1 {
     color: #fff;
-    font-family: 'Inter', sans-serif; /* Utilisation de la fonte Inter */
-    font-size: 1.5rem; /* Taille de police ajustée */
-    overflow: hidden; /* Empêche le contenu d'être révélé jusqu'à l'animation */
-    border-right: .15em solid orange; /* Curseur de la machine à écrire */
-    white-space: nowrap; /* Garde le contenu sur une seule ligne */
-    margin: 0 auto; /* Centre l'animation horizontalement */
-    letter-spacing: .15em; /* Ajuste l'espacement des lettres */
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
     animation: 
-      typing 5s steps(30, end) infinite, /* Raccourcit encore la durée de l'écriture */
-      blink-caret .7s step-end infinite; /* Temps plus long pour le clignotement */
+      typing 5s steps(30, end) infinite,
+      blink-caret .7s step-end infinite;
 }
 
-/* Effet de frappe avec une pause de 5 secondes avant réinitialisation */
 @keyframes typing {
-    0% { width: 0; } /* Début de l'animation */
-    50% { width: 100%; } /* Texte totalement visible */
-    80% { width: 100%; } /* Reste visible pendant 5 secondes supplémentaires */
-    100% { width: 0; } /* Réinitialisation pour recommencer */
+    0% { width: 0; } 
+    50% { width: 100%; } 
+    80% { width: 100%; }
+    100% { width: 0; }
 }
 
 /* Effet de clignotement du curseur */
