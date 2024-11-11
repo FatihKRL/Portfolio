@@ -7,8 +7,14 @@ body {
 }
 
 .container {
-    text-align: center;
-    margin-top: 50px;
+    width: 80%; /* Largeur de la vidéo (80% de la fenêtre) */
+    max-width: 800px; /* Limite la largeur maximale de la vidéo */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+.container iframe {
+    width: 100%; /* La vidéo prend toute la largeur du conteneur */
+    height: 450px; /* Définir une hauteur standard */
 }
 
 .video {
@@ -101,7 +107,18 @@ header {
 }
 
 @media(max-width: 810px) {
-    .video{
-        max-width: 60%;
+    .video {
+        max-width: 30%;
+    }
+    header {
+        height: 60px !important;
+        max-width: 100%;
+    }
+    .header-menu {
+        max-width: 20%;
+        font-size: 0.8rem;
+    }
+    .boxed {
+        width: 40%;
     }
 }
