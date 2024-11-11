@@ -1,18 +1,4 @@
-    // const menuToggle = document.getElementById('menu-toggle');
-    // const header = document.querySelector('header');
-
-    // menuToggle.addEventListener('click', () => {
-    //     header.classList.toggle('active');
-    // });
-
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     const menuToggle = document.getElementById("menu-toggle");
-    //     const headerMenu = document.getElementById("header-menu");
-    
-    //     menuToggle.addEventListener("click", () => {
-    //         headerMenu.classList.toggle("active");
-    //     });
-    // });
+    <a href="javascript:void(0);" onclick="document.getElementById('apropos').scrollIntoView({behavior: 'smooth'});">À propos</a>
 
     const openMenu = () => {
         const menu = document.querySelector(".header-menu");
