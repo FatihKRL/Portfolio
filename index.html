@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="boxed">
+            <div class="flex aligncenter space-beetween">
+                <button onclick="openMenu()" class="header-menu-mobile">
+                    <span class="material-symbols-outlined">
+                        Menu
+                        </span>
+                </button>
+                <a href="/" class="header-logo">
+                    <img src="/img/kf.jpg" alt="">
+                </a>
+                <ul class="header-menu">
+                    <li><a href="#accueil" onclick="closeMenu()">Accueil</a> </li>
+                    <li ><a href="#apropos" onclick="closeMenu()">A propos</a> </li>
+                    <li><a href="#comp" onclick="closeMenu()">Compétences</a> </li>
+                    <li><a href="#projets" onclick="closeMenu()">Projets</a> </li>
+                    <li><a href="video.html" onclick="closeMenu()">Vidéo</a> </li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="accueil"></div>
+    <div class="slider">    
+        <img src="/img/backmain1.avif" alt="image de background" class="slider-background">
+        <div class="slider-content">
+            <h1>KURUL Fatih</h1>
+            <div class="typewriter">
+                <h1>Étudiant en réseaux et télécomunications</h1>
+              </div>
+              <div id="apropos"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="boxed">
+            <div class="flex toColumn mCenter">
+                <div class="w40 wm100">
+                    <div class="image-container">
+                        <img src="/img/photo-removebg-preview.png" alt="">
+                    </div>
+                    <a href="CV_Fatih_KURUL.pdf" download="CV_Fatih_KURUL">
+                        <button class="button-18">Télécharger mon CV</button>
+                    </a>
+                </div>
+                <div class="w60 wm100">
+                    <h3>Je m'appelle <span>KURUL Fatih</span></h3>
+                    <br>
+                    <p>Je suis actuellement en troisième année de BUT Réseaux et Télécomunications, spécialisé en cybersécurité. Passionné par le monde de la sécurité des réseaux, je m’intéresse aux enjeux de la protection des systèmes d’information. À travers mes projets et mes stages, j’ai acquis des compétences pratiques en configuration de réseaux, en sécurité et en réponse aux incidents. Mon objectif est de continuer à développer mes compétences dans le domaine de la cybersécurité pour renforcer la protection des infrastructures numériques.</p>
+                </div>
+            </div>
+            <div id="comp"></div>
+        </div>
+    </div>
+
+    <div class="section dark">
+        <div class="boxed text-center">
+            <h2>Mes Compétences</h2>
+            <div class="flex toColumn gap20">
+                <div class="w25 wm100 skill">
+                    <img src="/img/admin.png">
+                    <h3>Administration</h3>
+                    <h4>(AD, GPO, DHCP...)</h4>
+                    <progress class="progress" id="file" max="100" value="80">80%</progress>
+                </div>
+                <div class="w25 wm100 skill">
+                    <img src="/img/dev.png">
+                    <H3>Développement</H3>
+                    <h5>(HTML-CSS-JS-PHP-JAVA-C++-BASH)</h5>
+                    <progress class="progress" id="file" max="100" value="55">55%</progress>
+                </div>
+                <div class="w25 wm100 skill">
+                    <img src="/img/telephonie.png">
+                    <h3>Téléphonie</h3>
+                    <h4>(Linphone / 3CX)</h4>
+                    <progress class="progress" id="file" max="100" value="70">70%</progress>
+                </div>
+                <div class="w25 wm100 skill">
+                    <img src="/img/cyb.png">
+                    <h3>Sécurité informatique</h3>
+                    <h4>(Penstest / SOC / Firewall)</h4>
+                    <progress class="progress" id="file" max="100" value="80">80%</progress>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div id="projets"></div>
+     <div class="section">
+        <div class="boxed text-center">
+            <h2>Mes projets</h2>
+            <div class="flex wrap gap20 space-beetween">
+                <div class="w32 wm50 realisation">
+                    <a href="https://drive.google.com/drive/folders/1orn3ydwwbtNkQuJ2zXr8k1ZFjF4Uul0A?usp=drive_link"> 
+                        <img src="/img/multisite-ce-qu-il-faut-savoir-2.jpg" alt="">
+                        <h3>SAE 303</h3>
+                        <h4>Concevoir un réseau multi-sites</h4>
+                    </a>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="https://drive.google.com/drive/folders/1qUQPGcdObcr0XSVYbZNg9v6e-TKhRglt?usp=drive_link"> 
+                        <img src="/img/java-480x320.jpg" alt="">
+                        <h3>SAE 302</h3>
+                        <h4>Développer des applications communicantes</h4>
+                    </a>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="https://drive.google.com/drive/folders/1cL-9gaxXn3lDTSg5WQkCiG0qmXOdh5s1?usp=drive_link"> 
+                        <img src="/img/solution-informatique.jpg" alt="">
+                        <h3>SAE 203</h3>
+                        <h4>Mettre en place une solution informatique</h4>
+                    </a>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="https://drive.google.com/drive/folders/1xKII-X0s2ot92KaqqxVFGtu4QMl98Jzk?usp=drive_link"> 
+                        <img src="/img/cyb4.jpg" alt="">
+                        <h3>SAE Cyb4</h3>
+                        <h4>Sécurisation d’un SI</h4>
+                    </a>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="https://drive.google.com/drive/folders/18_xDqJPaHU6tSNZY9YPht_Ee8GwJSqZP?usp=drive_link"> 
+                        <img src="/img/Rootme.webp" alt="">
+                        <h3>SAE 304</h3>
+                        <h4>Découvrir le pentesting</h4>
+                    </a>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="https://drive.google.com/drive/folders/1iW6FN1IVGPEGzuSLfJwT_c89vZagVXB9?usp=drive_link"> 
+                        <img src="/img/info.jfif" alt="">
+                        <h3>Stage</h3>
+                        <h4>Technicien informatique et réseau</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+<div id="contact"></div>
+     <div class="section dark2">
+        <div class="boxed text-center">
+            <div class="flex toColumn space-beetween mgap20">
+                <div class="w32 wm100 contact">
+                    <br>
+                    <h3 class="hfoot">Contactez moi !</h3>
+                    <p class="pfoot"><i class="fa fa-envelope" style="font-size:24px;"></i>  fatih.kurul@edu.univ-fcomte.fr</p>
+                </div>
+                <div class="w32 wm100 contact">
+                    <H4 class="hfoot2">Rejoignez moi sur les réseaux ! </H4>
+                    <div class="icon-reseau gap20">
+                        <a href="https://www.linkedin.com/in/fatih-kurul-a148a92aa/"><i class="fa fa-linkedin-square" style="font-size:48px;"></i></a>
+                        <a href=""><i class="fa fa-github" style="font-size:48px;"></i></div>     </a>
+                </div>
+                <div class="w322 wm100 contact">
+                    <br>
+                    <br>
+                    <h5 class="H42"><a href="mention/mention.html">Mention légale</a></h5>
+                    <h5>Copyright © 2024 KURUL Fatih. Tous droits réservés.</h5>
+                </div>
+            </div>
+        </div>
+     </div>
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.slider{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.slider-background{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+.typewriter h1 {
+    color: #fff;
+    font-family: 'Inter', sans-serif; /* Utilisation de la fonte Inter */
+    font-size: 1.5rem; /* Taille de police ajustée */
+    overflow: hidden; /* Empêche le contenu d'être révélé jusqu'à l'animation */
+    border-right: .15em solid orange; /* Curseur de la machine à écrire */
+    white-space: nowrap; /* Garde le contenu sur une seule ligne */
+    margin: 0 auto; /* Centre l'animation horizontalement */
+    letter-spacing: .15em; /* Ajuste l'espacement des lettres */
+    animation: 
+      typing 5s steps(30, end) infinite, /* Raccourcit encore la durée de l'écriture */
+      blink-caret .7s step-end infinite; /* Temps plus long pour le clignotement */
+}
+
+/* Effet de frappe avec une pause de 5 secondes avant réinitialisation */
+@keyframes typing {
+    0% { width: 0; } /* Début de l'animation */
+    50% { width: 100%; } /* Texte totalement visible */
+    80% { width: 100%; } /* Reste visible pendant 5 secondes supplémentaires */
+    100% { width: 0; } /* Réinitialisation pour recommencer */
+}
+
+/* Effet de clignotement du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    color: #fff;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+.slider-content p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+}
+.section{
+    padding: 100px 0;
+}
+.boxed{
+    max-width: 1280px;
+    margin-inline: auto;
+}
+.flex{
+    display: flex;
+    gap: 0px;
+}
+.w25:hover{
+    transform: translateY(-5px);
+}
+.dark{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/img/2d4d1c477bd9edfbb6b79c48f64a61b4.jpg!w700wp);
+    background-size: cover;
+    background-position-y: 50%;
+    color: #fff;
+}
+.w40 {
+    width: 40%;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.w40 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem
+}
+.w40 button{
+    margin-top: 20px;
+    max-width: 30vh;
+}
+.button-18 {
+    align-items: center;
+    background-color: #294449;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+  }
+  
+  .button-18:hover,
+  .button-18:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+    transform: translateY(-5px);
+  }
+  
+  .button-18:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+  }
+  
+  .button-18:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+  }
+.image-container img {
+    margin-top: 0; /* Supprime l'espace au-dessus de l'image */
+    max-width: 100%;
+    height: auto;
+}
+.w60{
+    width: 60%;
+    text-align: justify;
+}
+.icon-reseau {
+    display: flex; /* Utilisation du mode flex pour espacer les icônes */
+    gap: 20px; /* Espacement entre les icônes */
+    justify-content: center; /* Centrer les icônes */
+    margin-top: 30px;
+}
+.icon-reseau a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.icon-reseau a:hover{
+    transform: translateY(-5px);
+}
+.w322{
+    text-align: left;
+}
+.w60 h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.w60 span{
+    color: #294449;    ;
+}
+.text-center{
+    text-align: center;
+}
+.w25{
+    width: 25%;
+}
+.w32{
+    width: 32%;
+}
+.space-beetween{
+    justify-content: space-between;
+}
+.gap20{
+    gap: 20px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.skill{
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.skill img{
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.skill h3{
+    color: #000;
+    margin-top: 10px;
+}
+.skill h4{
+    color: #000;
+}
+.skill h5{
+    color: #000;
+}
+.H42 a{
+    margin-top: 0;
+    text-decoration: none;
+    color: #fff;
+}
+.realisation{
+    height: auto;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+.realisation h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: max-content;
+}
+.realisation h4{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    width: max-content;
+}
+.realisation a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.realisation img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+    transition: .4s ease;
+}
+.realisation img:hover{
+    filter: brightness(60%);
+    transform: translateY(-5px);
+}
+.icon{
+    display: block;
+    font-size: 40px !important;
+}
+.label{
+    display: block;
+    font-weight:700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.dark2{
+    background: #294449;
+    color: #fff;
+}
+.value{
+    display: block;
+    font-size: 1.5rem;
+}
+.contact{
+    border: 2px dashed #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.aligncenter{
+    align-items: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    padding: 10px 0;
+    box-shadow: 1px 1px 25px rgba(0,0,0,0.7);
+}
+.header-logo{
+    display: block;
+}
+.header-logo img{
+    width: 60px;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.header-menu li a:hover{
+    background: #F2F2F2;
+}
+.header-menu li:last-child a{
+    background-color:#808080;
+    color: #fff;
+    border-radius: 15px;
+}
+.hfoot2{
+    font-size: 1.5rem;
+}
+.hfoot{
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+.pfoot{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+}
+.header-menu-mobile{
+    display: none;
+}
+
+@media(max-width:810px){
+
+    header{
+        height: 60px !important;
+    }
+    .header-menu-mobile{
+        display: block;
+        border: 0px;
+        background-color: #fff;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 991;
+    }
+    .header-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+    }
+    .header-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        display: none;
+    }
+    .active{
+        display: flex;
+    }
+    .header-menu li:last-child a{
+        margin-top: 10px;
+    }
+    .slider-content{
+        width: 90%;
+    }
+    .slider-content p{
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    .typewriter{
+        display: none;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+    .toColumn{
+        flex-direction: column;
+    }
+    .mCenter{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .wm100{
+        width: 100%;
+    }
+    .section{
+        padding: 50px 0;
+    }
+    .boxed{
+        max-width: 90%;
+    }
+    .wm50{
+        width: 47%;
+    }
+    .w32 h4{
+        font-size: 0.5rem;
+        text-wrap: balance;
+    }
+    .mgap20{
+        gap: 20px;
+    }
+}
