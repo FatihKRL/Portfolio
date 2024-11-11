@@ -87,7 +87,7 @@ p{
     transform: translateY(-5px);
 }
 .dark{
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/img/2d4d1c477bd9edfbb6b79c48f64a61b4.jpg!w700wp);
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(2d4d1c477bd9edfbb6b79c48f64a61b4.jpg!w700wp);
     background-size: cover;
     background-position-y: 50%;
     color: #fff;
