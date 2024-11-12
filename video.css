@@ -105,6 +105,10 @@ header {
     color: #fff;
     border-radius: 15px;
 }
+.spann{
+    font-weight: bold;
+    color: red;
+}
 
 @media(max-width: 810px) {
     .video {
