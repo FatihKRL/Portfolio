@@ -442,4 +442,7 @@ header{
     .mgap20{
         gap: 20px;
     }
+    .h33{
+        text-align: center;
+    }
 }
