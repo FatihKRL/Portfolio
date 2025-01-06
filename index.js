@@ -17,3 +17,12 @@
             menuButton.innerHTML = "Menu";
         }
     };
+    function showDetails(detailId) {
+        var popup = document.getElementById(detailId);
+        popup.classList.add('show');
+    }
+    
+    function closePopup(detailId) {
+        var popup = document.getElementById(detailId);
+        popup.classList.remove('show');
+    }

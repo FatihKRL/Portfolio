@@ -70,33 +70,158 @@
         <div class="boxed text-center">
             <h2>Mes Compétences</h2>
             <div class="flex toColumn gap20">
-                <div class="w25 wm100 skill">
+                <div class="w25 wm100 skill" onclick="showDetails('adminDetails')">
                     <img src="admin.png">
-                    <h3>Administration</h3>
-                    <h4>(AD, GPO, DHCP...)</h4>
+                    <h3>Réseaux</h3>
+                    <h5>Cliquez pour en savoir plus</h5>
                     <progress class="progress" id="file" max="100" value="80">80%</progress>
                 </div>
-                <div class="w25 wm100 skill">
+                <div class="w25 wm100 skill" onclick="showDetails('devDetails')">
                     <img src="dev.png">
-                    <H3>Développement</H3>
-                    <h5>(HTML-CSS-JS-PHP-JAVA-C++-BASH)</h5>
+                    <h3>Développement</h3>
+                    <h5>Cliquez pour en savoir plus</h5>
                     <progress class="progress" id="file" max="100" value="55">55%</progress>
                 </div>
-                <div class="w25 wm100 skill">
+                <div class="w25 wm100 skill" onclick="showDetails('telephonieDetails')">
                     <img src="telephonie.png">
-                    <h3>Téléphonie</h3>
-                    <h4>(Linphone / 3CX)</h4>
+                    <h4>Connecter les entreprises et usagers</h4>
+                    <h5>Cliquez pour en savoir plus</h5>
                     <progress class="progress" id="file" max="100" value="70">70%</progress>
                 </div>
-                <div class="w25 wm100 skill">
+                <div class="w25 wm100 skill" onclick="showDetails('cyberDetails')">
                     <img src="cyb.png">
                     <h3>Sécurité informatique</h3>
-                    <h4>(Penstest / SOC / Firewall)</h4>
+                    <h5>Cliquez pour en savoir plus</h5>
                     <progress class="progress" id="file" max="100" value="80">80%</progress>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
+    
+    <div class="popup" id="adminDetails">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('adminDetails')">X</button>
+            <h3>Administration systèmes et réseaux : </h3>
+            <h4>Windows server 2019/2022</h4>
+            <ul>
+                <li><strong>Serveurs</strong>
+                    <ul>
+                        <li>DNS, DHCP, IIS, RDS, File Server, Print Server, Storage Server, Certificate Authority Server, SQL Server</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+            <li><strong>Active Directory</strong>
+                <ul>
+                    <li>Création et gestion d’OU, groupes, utilisateurs</li>
+                    <li>Permissions, délégation de contrôle (GPO, ACL)</li>
+                    <li>Gestion des stratégies de sécurité (GPO)</li>
+                    <li>Contrôle d’accès basé sur les groupes (AGDLP)</li>
+                </ul>
+            </li>
+        </ul>
+            <h4>Linux</h4>
+            <ul>
+                <li><strong>Serveurs</strong>
+                    <ul>
+                        <li>DHCP, DNS, Apache, Nginx, MySQL, MariaDB, FTP, Postfix, Samba,FTP, NFS, SSH, LDAP, OpenVPN </li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+        <h3>Réseaux : </h3>
+        <h4>Routeurs</h4>
+        <ul>
+            <li>OSPF, BGP, IPv4, IPv6, MPLS, HSRP, SPT</li>
+        </ul>
+        <h4>Switches lvl 2/3</h4>
+        <ul>
+            <li>VLAN, HSRP, Routage Inter-VLAN, VTP</li>
+        </ul>
+        <br>
+        <h3>Virtualisation :</h3>
+        <ul>
+            <li>Proxmox, VmWare ESXI, VirtualBox, Hyper-V</li>
+        </ul>
+        <h3>Supérvision :</h3>
+        <ul>
+            <li>Nagios</li>
+        </ul>
+        </div>
+    </div>
+    <div class="popup" id="devDetails">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('devDetails')">X</button>
+            <h3>Développement</h3>
+            <ul>
+                <li><strong>HTML, CSS, JavaScript, PHP</strong></li>
+                <ul>
+                    <li>Création de site web statique/dynamique</li>
+                </ul>
+                <li><strong>Java</strong></li>
+                <ul>
+                    <li>Création d'une application basique de chat.</li>
+                </ul>
+                <li><strong>C++</strong></li>
+                <ul>
+                    <li>programmation de robot Arduino, création de script pour des clé comme Rubber Ducky</li>
+                </ul>
+                <li><strong>Windev</strong></li>
+                <ul>
+                    <li>Création d'un logiciel de gestion de stock</li>
+                </ul>
+                <li><strong>Wordpress</strong></li>
+                <ul>
+                    <li>Création de site vitrine</li>
+                </ul>
+                <li><strong>PowerShell/Shell</strong></li>
+                <ul>
+                    <li>Création de script pour l'administration système</li>
+                </ul>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="popup" id="telephonieDetails">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('telephonieDetails')">X</button>
+            <h3>Téléphonie IP</h3>
+            <ul>
+            <li><strong>Serveur PBX</strong></li>
+            <ul>
+                <li>Asterisk, 3CX</li>
+            </ul>
+            <li><strong>Client VoIP</strong></li>
+            <ul>
+                <li>Linphone</li>
+            </ul>
+        </ul>
+        <h3>Réseaux cellulaires</h3>
+        <ul>
+            <li>Compréhension des réseaux internet (1G, GSM, UMTS, 4G LTE, 5G, Réseaux fibre/cuivre)</li>
+        </ul>
+        </div>
+    </div>
+    <div class="popup" id="cyberDetails">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('cyberDetails')">X</button>
+            <h3>Sécurité informatique</h3>
+            <ul>
+                <li><strong>Red Teaming</strong></li>
+                <ul>
+                    <li>CTF : RootMe, TryHackMe, HackTheBox ..</li>
+                    <li>Analyse, identification, exploit, escalade de privilèges, nettoyage ...</li>
+                </ul>
+                <li><strong>Blue Teaming</strong></li>
+                <ul>
+                    <li>IDS/IPS : Suricata, Snort, Zeek</li>
+                    <li>SIEM : Graylog</li>
+                    <li>FireWall : pfSense, iptables, Stormshield</li>
+                </ul>
+            </ul>
+
+        </div>
+    </div>
      <div id="projets"></div>
      <div class="section">
         <div class="boxed text-center">
