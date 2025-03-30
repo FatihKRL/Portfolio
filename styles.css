@@ -158,7 +158,8 @@ p{
 .image-container img {
     margin-top: 0; /* Supprime l'espace au-dessus de l'image */
     max-width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
 }
 .w60{
     width: 60%;
